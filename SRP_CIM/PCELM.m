@@ -36,13 +36,12 @@ Output_hidden_test = zeros(NumberofTestingData,Num_hidden);
 Feature_Sele = randi(len_feature,Num_hidden,num_subfeature);
 Input_Weight = zeros(num_subfeature,Num_hidden); % Input_weight (n m) where n is number of sub-features, m is the iteration times.
 BiasofHiddenNeurons = rand(1,Num_hidden);
-beta1 = 0;
 beta = 2;
 
 for i=1:Num_hidden  
     train_data_100 = matrix_train(:,Feature_Sele(i,:));
     test_data_100 = matrix_test(:,Feature_Sele(i,:));    
-    [W,Output_hidden_train(:,i),Output_hidden_test(:,i)] = semiLDA( train_data_100, test_data_100,label_train,1,beta,beta1);% weights are learned through SRP
+    [W,Output_hidden_train(:,i),Output_hidden_test(:,i)] = sLDA( train_data_100, test_data_100,label_train,1,beta);% weights are learned through SRP
     Input_Weight(:,i) = W;
 end
 

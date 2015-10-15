@@ -1,8 +1,8 @@
 clear
-matrix_train = load('D:\data\20news_SRP\matrix_train1');
-matrix_test = load('D:\data\20news_SRP\matrix_test1');
-label_train = load('D:\data\20news_SRP\train_label1');
-label_test = load('D:\data\20news_SRP\test_label1');
+matrix_train = load('20news_SRP\matrix_train1');
+matrix_test = load('20news_SRP\matrix_test1');
+label_train = load('20news_SRP\train_label1');
+label_test = load('20news_SRP\test_label1');
 matrix_train = matrix_train.A;
 matrix_test = matrix_test.B;
 label_train = label_train.C;
