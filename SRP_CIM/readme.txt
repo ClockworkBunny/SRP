@@ -8,3 +8,5 @@ Some codes and data for our paper: Semi-Random Projection for Dimensionality Red
 3 test_ELM: main code for testing
 
 4 20news_SRP: 20 news data. The index indiciates the row number of the corresponding dataset in Table 2 in our paper. For example, 1 means comp vs rec. 
+
+5 test
